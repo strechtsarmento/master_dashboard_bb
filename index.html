@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Dashboard BB | Domine o Edital</title>
+    <style>
+        :root { 
+            --lilas: #8b5cf6; 
+            --azul: #0047bb; 
+            --amarelo: #fcf000; 
+            --cinza-escuro: #334155;
+            --texto-secundario: #64748b;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; display: flex; flex-direction: column; align-items: center; background: #f8fafc; color: #1e293b; }
+        
+        .hero { width: 100%; padding: 4rem 1rem; background: var(--azul); color: white; text-align: center; }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+        
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; max-width: 1000px; padding: 2rem; }
+        .card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-top: 4px solid var(--lilas); }
+        
+        .btn-cta { background: var(--amarelo); color: var(--azul); padding: 1rem 2rem; font-weight: bold; border-radius: 8px; text-decoration: none; display: inline-block; margin-top: 20px; transition: transform 0.2s; }
+        .btn-cta:hover { transform: translateY(-2px); }
+        
+        /* Seção de Demonstração */
+        .showcase { padding: 4rem 1rem; background: #f8fafc; text-align: center; width: 100%; }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; max-width: 1000px; margin: 2rem auto; }
+        .gallery img { width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        
+        .video-container { max-width: 800px; margin: 2rem auto; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 15px rgba(0,0,0,0.1); }
+        .video-container video { width: 100%; display: block; }
+
+        .download-section { text-align: center; padding: 4rem 1rem; background: #fff; width: 100%; }
+        .btn-download { background: var(--cinza-escuro); color: white; padding: 1rem 2rem; font-weight: bold; border-radius: 8px; text-decoration: none; display: inline-block; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+<section class="hero">
+    <h1>Master Dashboard BB</h1>
+    <p>A ferramenta de elite para sua aprovação no Banco do Brasil.</p>
+    <a href="login.html" class="btn-cta">ACESSAR PAINEL</a>
+</section>
+
+<div class="features">
+    <div class="card">
+        <h3>Ciclos Inteligentes</h3>
+        <p>Gere blocos de estudo baseados no peso real do edital e seu progresso.</p>
+    </div>
+    <div class="card">
+        <h3>Sincronia Total</h3>
+        <p>Seu progresso salvo na nuvem. Estude em qualquer dispositivo.</p>
+    </div>
+    <div class="card">
+        <h3>Gabarito Instantâneo</h3>
+        <p>Valide suas questões e acompanhe seu índice de acertos em tempo real.</p>
+    </div>
+</div>
+
+<section class="showcase">
+    <h2 style="color: var(--cinza-escuro);">Tour pelo Sistema</h2>
+    <div class="gallery">
+        <img src="Captura de tela 2026-05-28 003116.png" alt="Painel Principal">
+        <img src="Captura de tela 2026-05-28 004353.png" alt="Banco de Exercícios">
+        <img src="Captura de tela 2026-05-28 004411.png" alt="Sistema de Feedback">
+    </div>
+
+    <h3 style="color: var(--cinza-escuro);">Demonstração Funcional</h3>
+    <div class="video-container">
+        <video controls>
+            <source src="Gravação de Tela 2026-05-28 004645.mp4" type="video/mp4">
+            Seu navegador não suporta a exibição de vídeos.
+        </video>
+    </div>
+    <h3 style="color: var(--cinza-escuro);">Demonstração Funcional</h3>
+    <div class="video-container">
+        <video controls>
+            <source src="Gravação de Tela 2026-05-21 201122.mp4" type="video/mp4">
+            Seu navegador não suporta a exibição de vídeos.
+        </video>
+    </div>
+</section>
+
+<section class="download-section">
+    <h2 style="color: var(--cinza-escuro);">Pronto para começar?</h2>
+    <p style="color: var(--texto-secundario); margin-bottom: 2rem;">Tenha acesso imediato ao Master Dashboard BB e acelere sua aprovação.</p>
+    
+    <a href="https://sua-url-kiwify.com" class="btn-cta" style="background: #2563eb; color: white; padding: 1.2rem 3rem; font-size: 1.2rem;">QUERO ACESSAR AGORA</a>
+    
+    <div style="margin-top: 3rem; font-size: 0.9rem; color: #94a3b8;">
+        <p>Desenvolvido com <strong>Electron</strong>, <strong>Firebase Firestore</strong> e <strong>JavaScript modular</strong>.</p>
+    </div>
+</section>
+</body>
+</html>
