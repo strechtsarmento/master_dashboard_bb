@@ -12,85 +12,59 @@
             --cinza-escuro: #334155;
             --texto-secundario: #64748b;
         }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; display: flex; flex-direction: column; align-items: center; background: #f8fafc; color: #1e293b; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f8fafc; color: #1e293b; }
         
-        .hero { width: 100%; padding: 4rem 1rem; background: var(--azul); color: white; text-align: center; }
-        .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+        /* Hero Section com mais impacto */
+        .hero { width: 100%; padding: 5rem 1rem; background: var(--azul); color: white; text-align: center; }
+        .hero h1 { font-size: 3rem; margin-bottom: 0.5rem; }
+        .hero p { font-size: 1.25rem; opacity: 0.9; margin-bottom: 2rem; }
         
-        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; max-width: 1000px; padding: 2rem; }
-        .card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-top: 4px solid var(--lilas); }
+        .btn-cta { background: var(--amarelo); color: var(--azul); padding: 1.2rem 3rem; font-weight: 800; border-radius: 50px; text-decoration: none; display: inline-block; transition: 0.3s; font-size: 1.1rem; }
+        .btn-cta:hover { transform: scale(1.05); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
         
-        .btn-cta { background: var(--amarelo); color: var(--azul); padding: 1rem 2rem; font-weight: bold; border-radius: 8px; text-decoration: none; display: inline-block; margin-top: 20px; transition: transform 0.2s; }
-        .btn-cta:hover { transform: translateY(-2px); }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1100px; margin: -50px auto 0; padding: 2rem; }
+        .card { background: white; padding: 2.5rem; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border-top: 6px solid var(--lilas); }
         
-        /* Seção de Demonstração */
-        .showcase { padding: 4rem 1rem; background: #f8fafc; text-align: center; width: 100%; }
-        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; max-width: 1000px; margin: 2rem auto; }
-        .gallery img { width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        
-        .video-container { max-width: 800px; margin: 2rem auto; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 15px rgba(0,0,0,0.1); }
+        .showcase { padding: 4rem 1rem; text-align: center; }
+        .video-container { max-width: 800px; margin: 2rem auto; border-radius: 16px; overflow: hidden; border: 8px solid white; box-shadow: 0 20px 25px rgba(0,0,0,0.1); }
         .video-container video { width: 100%; display: block; }
-
-        .download-section { text-align: center; padding: 4rem 1rem; background: #fff; width: 100%; }
-        .btn-download { background: var(--cinza-escuro); color: white; padding: 1rem 2rem; font-weight: bold; border-radius: 8px; text-decoration: none; display: inline-block; margin-top: 20px; }
     </style>
 </head>
 <body>
 
 <section class="hero">
-    <h1>Master Dashboard BB</h1>
-    <p>A ferramenta de elite para sua aprovação no Banco do Brasil.</p>
-    <a href="login.html" class="btn-cta">ACESSAR PAINEL</a>
+    <h1>Domine o Edital do BB</h1>
+    <p>A tecnologia que transforma sua preparação em aprovação.</p>
+    <a href="https://sua-url-kiwify.com" class="btn-cta">QUERO ACESSAR O DASHBOARD</a>
 </section>
 
 <div class="features">
     <div class="card">
-        <h3>Ciclos Inteligentes</h3>
-        <p>Gere blocos de estudo baseados no peso real do edital e seu progresso.</p>
+        <h3>🚀 Ciclos Inteligentes</h3>
+        <p>Pare de perder tempo montando cronogramas. O sistema gera blocos baseados no peso real do edital para você focar no que importa.</p>
     </div>
     <div class="card">
-        <h3>Sincronia Total</h3>
-        <p>Seu progresso salvo na nuvem. Estude em qualquer dispositivo.</p>
+        <h3>☁️ Sincronia Total</h3>
+        <p>Seu progresso é salvo instantaneamente. Estude do PC ou notebook com a mesma fluidez.</p>
     </div>
     <div class="card">
-        <h3>Gabarito Instantâneo</h3>
-        <p>Valide suas questões e acompanhe seu índice de acertos em tempo real.</p>
+        <h3>📊 Gabarito Instantâneo</h3>
+        <p>Valide seu desempenho em tempo real. Veja sua evolução e identifique pontos cegos nos estudos antes da prova.</p>
     </div>
 </div>
 
 <section class="showcase">
-    <h2 style="color: var(--cinza-escuro);">Tour pelo Sistema</h2>
-    <div class="gallery">
-        <img src="Captura de tela 2026-05-28 003116.png" alt="Painel Principal">
-        <img src="Captura de tela 2026-05-28 004353.png" alt="Banco de Exercícios">
-        <img src="Captura de tela 2026-05-28 004411.png" alt="Sistema de Feedback">
-    </div>
-
-    <h3 style="color: var(--cinza-escuro);">Demonstração Funcional</h3>
+    <h2>Veja o Master Dashboard em ação</h2>
     <div class="video-container">
         <video controls>
             <source src="Gravação de Tela 2026-05-28 004645.mp4" type="video/mp4">
-            Seu navegador não suporta a exibição de vídeos.
-        </video>
-    </div>
-    <h3 style="color: var(--cinza-escuro);">Demonstração Funcional</h3>
-    <div class="video-container">
-        <video controls>
-            <source src="Gravação de Tela 2026-05-21 201122.mp4" type="video/mp4">
-            Seu navegador não suporta a exibição de vídeos.
         </video>
     </div>
 </section>
 
-<section class="download-section">
-    <h2 style="color: var(--cinza-escuro);">Pronto para começar?</h2>
-    <p style="color: var(--texto-secundario); margin-bottom: 2rem;">Tenha acesso imediato ao Master Dashboard BB e acelere sua aprovação.</p>
-    
-    <a href="https://sua-url-kiwify.com" class="btn-cta" style="background: #2563eb; color: white; padding: 1.2rem 3rem; font-size: 1.2rem;">QUERO ACESSAR AGORA</a>
-    
-    <div style="margin-top: 3rem; font-size: 0.9rem; color: #94a3b8;">
-        <p>Desenvolvido com <strong>Electron</strong>, <strong>Firebase Firestore</strong> e <strong>JavaScript modular</strong>.</p>
-    </div>
-</section>
+<footer style="text-align: center; padding: 2rem; color: #94a3b8;">
+    <p>Desenvolvido com tecnologia de ponta (Electron + Firebase).</p>
+</footer>
+
 </body>
 </html>
