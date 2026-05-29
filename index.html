@@ -9,7 +9,86 @@
             --lilas: #8b5cf6; 
             --azul: #0047bb; 
             --amarelo: #fcf000; 
+            --cinza-escuro: #334155;<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Dashboard BB | Domine o Edital</title>
+    <style>
+        :root { 
+            --lilas: #8b5cf6; 
+            --azul: #0047bb; 
+            --amarelo: #fcf000; 
             --cinza-escuro: #334155;
+            --texto-secundario: #64748b;
+        }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f8fafc; color: #1e293b; }
+        
+        /* Hero Section com mais impacto */
+        .hero { width: 100%; padding: 5rem 1rem; background: var(--azul); color: white; text-align: center; }
+        .hero h1 { font-size: 3rem; margin-bottom: 0.5rem; }
+        .hero p { font-size: 1.25rem; opacity: 0.9; margin-bottom: 2rem; }
+        
+        .btn-cta { background: var(--amarelo); color: var(--azul); padding: 1.2rem 3rem; font-weight: 800; border-radius: 50px; text-decoration: none; display: inline-block; transition: 0.3s; font-size: 1.1rem; }
+        .btn-cta:hover { transform: scale(1.05); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+        
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1100px; margin: -50px auto 0; padding: 2rem; }
+        .card { background: white; padding: 2.5rem; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border-top: 6px solid var(--lilas); }
+        
+        .showcase { padding: 4rem 1rem; text-align: center; }
+        .video-container { max-width: 800px; margin: 2rem auto; border-radius: 16px; overflow: hidden; border: 8px solid white; box-shadow: 0 20px 25px rgba(0,0,0,0.1); }
+        .video-container video { width: 100%; display: block; }
+    </style>
+</head>
+<body>
+
+<section class="hero">
+    <h1>Domine o Edital do BB</h1>
+    <p>A tecnologia que transforma sua preparação em aprovação.</p>
+    <a href="versoes.html" class="btn-cta">ADQUIRIR AGORA!</a>
+</section>
+
+<div class="features">
+    <div class="card">
+        <h3>🚀 Ciclos Inteligentes</h3>
+        <p>Pare de perder tempo montando cronogramas. O sistema gera blocos baseados no peso real do edital para você focar no que importa.</p>
+    </div>
+    <div class="card">
+        <h3>☁️ Sincronia Total</h3>
+        <p>Seu progresso é salvo instantaneamente. Estude do PC ou notebook com a mesma fluidez.</p>
+    </div>
+    <div class="card">
+        <h3>📊 Gabarito Instantâneo</h3>
+        <p>Valide seu desempenho em tempo real. Veja sua evolução e identifique pontos cegos nos estudos antes da prova.</p>
+    </div>
+</div>
+
+<section class="showcase">
+    <h2>Veja o Master Dashboard em ação</h2>
+    
+    <div class="video-container">
+        <video controls width="100%">
+            <source src="Gravação de Tela 2026-05-28 004645.mp4" type="video/mp4">
+            
+        </video>
+    </div>
+
+    <div class="video-container">
+        <video controls width="100%">
+            <source src="Gravação de Tela 2026-05-21 201122.mp4" type="video/mp4">
+           
+        </video>
+    </div>
+</section>
+
+<footer style="text-align: center; padding: 2rem; color: #94a3b8;">
+    <p>Desenvolvido com tecnologia de ponta (Electron + Firebase).</p>
+</footer>
+
+</body>
+</html>
+
             --texto-secundario: #64748b;
         }
         body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f8fafc; color: #1e293b; }
